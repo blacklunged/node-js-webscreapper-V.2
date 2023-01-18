@@ -1,0 +1,32 @@
+{
+  "name": "scrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run clean && npm run create && node index.js",
+    "clean" :"if exist data rmdir /Q /S data",
+    "create":"mkdir data"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.4",
+    "axios": "^1.1.3",
+    "chalk": "^5.1.2",
+    "cherio": "^1.0.0-rc.2",
+    "node-fetch": "^3.2.10",
+    "nodemon": "^2.0.20",
+    "puppeteer": "^19.1.2",
+    "queue": "^6.0.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "transliteration": "^2.3.5",
+    "tress": "^1.1.4"
+  },
+  "devDependencies": {
+    "@types/async": "^3.2.16"
+  }
+}
